@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- CLAVICLE -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts[child::li[def="Clavicle"]]/li[def="Shoulder" and customLabel="right shoulder"]/parts[not(child::li[def="Clavicle"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Clavicle</def>
+						<customLabel>right clavicle</customLabel>
+						<coverage>0.09</coverage>
+						<height>Top</height>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts[child::li[def="Shoulder"]/parts/li[def="Clavicle"]]/li[def="Clavicle" and customLabel="right clavicle"]</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts[child::li[def="Clavicle"]]/li[def="Shoulder" and customLabel="left shoulder"]/parts[not(child::li[def="Clavicle"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Clavicle</def>
+						<customLabel>left clavicle</customLabel>
+						<coverage>0.09</coverage>
+						<height>Top</height>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts[child::li[def="Shoulder"]/parts/li[def="Clavicle"]]/li[def="Clavicle" and customLabel="left clavicle"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

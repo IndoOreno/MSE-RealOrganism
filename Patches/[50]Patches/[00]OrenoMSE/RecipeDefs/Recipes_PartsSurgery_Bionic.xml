@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Bionic Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallBionicRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>1500</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Bionic Spine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallBionicSpine"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<!--=============== Special Bionics ================-->
+
+	<!-- Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallBreathingSupportRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallRelaxationRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallColdRegulatorRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallHeatRegulatorRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+</Patch>

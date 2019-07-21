@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyPartDef[defName="FrontalLobe" or defName="ParietalLobe" or defName="TemporalLobe" or defName="OccipitalLobe" or defName="Cerebellum" or defName="Brainstem" or defName="Mouth" or defName="Tongue"][not(child::bleedRate)]</xpath>
+					<value>
+						<bleedRate>1.5</bleedRate>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

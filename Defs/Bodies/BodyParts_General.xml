@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Frontal Lobe - New brain part -->
+	<BodyPartDef>
+		<defName>FrontalLobe</defName>
+		<label>frontal lobe</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Moving, talking, and emotion -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Parietal Lobe - New brain part -->
+	<BodyPartDef>
+		<defName>ParietalLobe</defName>
+		<label>parietal lobe</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Pain and manipulation -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Temporal Lobe - New brain part -->
+	<BodyPartDef>
+		<defName>TemporalLobe</defName>
+		<label>temporal lobe</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Memory and hearing -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Occipital Lobe - New brain part -->
+	<BodyPartDef>
+		<defName>OccipitalLobe</defName>
+		<label>occipital lobe</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Sight -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Cerebellum - New brain part -->
+	<BodyPartDef>
+		<defName>Cerebellum</defName>
+		<label>cerebellum</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Can scale moving and talking stat -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Brainstem - New brain part -->
+	<BodyPartDef>
+		<defName>Brainstem</defName>
+		<label>brainstem</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : Breathing, eating, manipulation, moving, and sleeping -->
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Mouth - New organ group for eating and talking -->
+	<BodyPartDef>
+		<defName>Mouth</defName>
+		<label>mouth</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Tongue - New organ for eating and talking -->
+	<BodyPartDef>
+		<defName>Tongue</defName>
+		<label>tongue</label>
+		<hitPoints>5</hitPoints>
+		<delicate>true</delicate>
+		<skinCovered>false</skinCovered>
+		<socketed>true</socketed>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+		<spawnThingOnRemoved>Tongue</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Tooth - New organ for eating -->
+	<BodyPartDef>
+		<defName>Tooth</defName>
+		<label>tooth</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<beautyRelated>true</beautyRelated>
+		<tags>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Pharynx - New organ for eating and breathing pathway -->
+	<BodyPartDef>
+		<defName>Pharynx</defName>
+		<label>pharynx</label>
+		<hitPoints>10</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>EatingPathway</li>
+		</tags>
+		<destroyableByDamage>false</destroyableByDamage>
+	</BodyPartDef>
+
+	<!-- Larynx - New organ for breathing pathway and talking -->
+	<BodyPartDef>
+		<defName>Larynx</defName>
+		<label>larynx</label>
+		<hitPoints>10</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+			<li>TalkingSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Larynx</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Esophagus - New organ for eating pathway -->
+	<BodyPartDef>
+		<defName>Esophagus</defName>
+		<label>esophagus</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>EatingPathway</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Esophagus</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Trachea - New organ for breathing pathway -->
+	<BodyPartDef>
+		<defName>Trachea</defName>
+		<label>trachea</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BreathingPathway</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Trachea</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Bronchus - New lung part -->
+	<BodyPartDef>
+		<defName>Bronchus</defName>
+		<label>bronchus</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BreathingSource</li>
+		</tags>
+		<spawnThingOnRemoved>Bronchus</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Sacrum - New spine part -->
+	<BodyPartDef>
+		<defName>Sacrum</defName>
+		<label>sacrum</label>
+		<hitPoints>8</hitPoints>
+		<permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<tags>
+			<li>Spine</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Coccyx - New spine part -->
+	<BodyPartDef>
+		<defName>Coccyx</defName>
+		<label>coccyx</label>
+		<hitPoints>3</hitPoints>
+		<permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+	</BodyPartDef>
+
+</Defs>

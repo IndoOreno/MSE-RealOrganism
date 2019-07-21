@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- MESENTERY -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Mesentery"])]//li[def="Stomach"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Mesentery</def>
+				<coverage>0.010</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- SMALL INTESTINE -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Intestine" or def="SmallIntestine"])]//li[def="Stomach"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>SmallIntestine</def>
+				<coverage>0.025</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- LARGE INTESTINE -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="LargeIntestine"])]//li[def="SmallIntestine"]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>LargeIntestine</def>
+				<coverage>0.025</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- PANCREAS -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Pancreas"])]//li[def="Stomach"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Pancreas</def>
+				<coverage>0.010</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- THYMUS -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Thymus"])]//li[def="Heart"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Thymus</def>
+				<coverage>0.005</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- SPLEEN -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Spleen"])]//li[def="Heart"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Spleen</def>
+				<coverage>0.005</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- BLADDER -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Bladder"])]//li[def="Kidney"][last()]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Bladder</def>
+				<coverage>0.003</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- GALLBLADDER -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Gallbladder"])]//li[def="Liver"]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Gallbladder</def>
+				<coverage>0.002</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Scapula - New shoulder bone -->
+	<BodyPartDef>
+		<defName>Scapula</defName>
+		<label>scapula</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Upper Arm - New limb group for arm -->
+	<BodyPartDef>
+		<defName>UpperArm</defName>
+		<label>upper arm</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>UpperArm</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Elbow - New arm joint -->
+	<BodyPartDef>
+		<defName>Elbow</defName>
+		<label>elbow</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Elbow</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Forearm - New limb group for upper arm -->
+	<BodyPartDef>
+		<defName>Forearm</defName>
+		<label>forearm</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Forearm</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Ulna - New arm bone -->
+	<BodyPartDef>
+		<defName>Ulna</defName>
+		<label>ulna</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Wrist - New hand joint -->
+	<BodyPartDef>
+		<defName>Wrist</defName>
+		<label>wrist</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Wrist</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Hip - New leg joint -->
+	<BodyPartDef>
+		<defName>Hip</defName>
+		<label>hip</label>
+		<hitPoints>35</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Hip</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Thigh - New limb group for leg -->
+	<BodyPartDef>
+		<defName>Thigh</defName>
+		<label>thigh</label>
+		<hitPoints>35</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Thigh</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Knee - New thigh joint -->
+	<BodyPartDef>
+		<defName>Knee</defName>
+		<label>knee</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Knee</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Patella - New knee part -->
+	<BodyPartDef>
+		<defName>Patella</defName>
+		<label>patella</label>
+		<hitPoints>10</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Lower Leg - New limb group for thigh -->
+	<BodyPartDef>
+		<defName>LowerLeg</defName>
+		<label>lower leg</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>LowerLeg</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Fibula - New leg bone -->
+	<BodyPartDef>
+		<defName>Fibula</defName>
+		<label>fibula</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Ankle - New lower leg joint -->
+	<BodyPartDef>
+		<defName>Ankle</defName>
+		<label>ankle</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbSegment</li>
+		</tags>
+		<spawnThingOnRemoved>Ankle</spawnThingOnRemoved>
+	</BodyPartDef>
+
+</Defs>

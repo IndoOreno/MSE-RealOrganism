@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Advanced Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedBreathingSupportRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>advanced breathing support rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedBreathingSupportRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>an advanced breathing support rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedBreathingSupportRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.020</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+					</statOffsets>
+					<capMods>
+						<li>
+							<capacity>Breathing</capacity>
+							<!----><offset>0.02</offset>
+						</li>
+					</capMods>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Advanced Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedRelaxationRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>advanced relaxation rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedRelaxationRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>an advanced relaxation rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedRelaxationRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.020</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+						<!----><MentalBreakThreshold>-0.02</MentalBreakThreshold>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Advanced Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedColdRegulatorRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>advanced cold regulator rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedColdRegulatorRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>an advanced cold regulator rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedColdRegulatorRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.020</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+						<!----><ComfyTemperatureMin>-1.0</ComfyTemperatureMin>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Advanced Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedHeatRegulatorRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>advanced heat regulator rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedHeatRegulatorRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>an advanced heat regulator rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="AdvancedHeatRegulatorRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.020</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.020</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.020</ArmorRating_Sharp>
+						<!----><ComfyTemperatureMax>1.0</ComfyTemperatureMax>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+</Patch>

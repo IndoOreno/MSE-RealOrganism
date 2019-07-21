@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- TORSO -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Torso"]/hitPoints</xpath>
+		<success>Always</success>
+		<value>
+			<hitPoints>60</hitPoints>
+		</value>
+	</Operation>
+
+	<!-- CLAVICLE -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Clavicle"]/hitPoints</xpath>
+		<success>Always</success>
+		<value>
+			<hitPoints>20</hitPoints>
+		</value>
+	</Operation>
+
+	<!-- LEG -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyPartDef[defName="Leg"]/hitPoints</xpath>
+		<success>Always</success>
+		<value>
+			<hitPoints>35</hitPoints>
+		</value>
+	</Operation>
+
+</Patch>

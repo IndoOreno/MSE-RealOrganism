@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{245F7ECB-23C4-44C6-A273-4B3D3BF1EBB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrenoMSE_RealOrganism</RootNamespace>
+    <AssemblyName>OrenoMSE_RealOrganism</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\MSE_RealOrganism\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Program Files %28x86%29\Steam\steamapps\common\RimWorld\Mods\MSE_RealOrganism\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Harmony\Harmony_FoodUtility.cs" />
+    <Compile Include="Harmony\Harmony_GetFood.cs" />
+    <Compile Include="Harmony\Harmony_HediffWithComps.cs" />
+    <Compile Include="Harmony\Harmony_Thing.cs" />
+    <Compile Include="MedicalSystemExpansion.cs" />
+    <Compile Include="MSE_DefOf\MSE_BodyPartDefOf.cs" />
+    <Compile Include="MSE_DefOf\MSE_BodyPartTagDefOf.cs" />
+    <Compile Include="MSE_DefOf\MSE_HediffDefOf.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqTalkingPart.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqMovingPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqEatingPathwayPart.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqEatingPart.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqEatingPathwayPart.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqMetabolismPart.cs" />
+    <Compile Include="MSE_HediffComp\HediffComp_ReqBreathingPathwayPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqEatingPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqTalkingPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqMovingPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqMetabolismPart.cs" />
+    <Compile Include="MSE_HediffComp\Properties\HediffCompProperties_ReqBreathingPathwayPart.cs" />
+    <Compile Include="MSE_ThoughtWorker\ThoughtWorker_AdvancedRelaxationRibs.cs" />
+    <Compile Include="MSE_ThoughtWorker\ThoughtWorker_RelaxationRibs.cs" />
+    <Compile Include="MSE_ThoughtWorker\ThoughtWorker_ArchotechRibs.cs" />
+    <Compile Include="MSE_ThoughtWorker\ThoughtWorker_BionicRibs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- SCAPULA -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Scapula" and def="right scapula"])]//li[def="Clavicle" and customLabel="right clavicle"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Scapula</def>
+						<customLabel>right scapula</customLabel>
+						<coverage>0.110</coverage>
+						<height>Top</height>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Scapula" and def="left scapula"])]//li[def="Clavicle" and customLabel="left clavicle"]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Scapula</def>
+						<customLabel>left scapula</customLabel>
+						<coverage>0.110</coverage>
+						<height>Top</height>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- ULNA -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm" and customLabel="right arm"]/parts[not(descendant::li[def="Ulna"])]//li[def="Radius"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Ulna</def>
+						<customLabel>right ulna</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Arms</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm" and customLabel="left arm"]/parts[not(descendant::li[def="Ulna"])]//li[def="Radius"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Ulna</def>
+						<customLabel>left ulna</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Arms</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- FIBULA -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg" and customLabel="right leg"]/parts[not(descendant::li[def="Fibula"])]//li[def="Tibia"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Fibula</def>
+						<customLabel>right fibula</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Legs</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg" and customLabel="left leg"]/parts[not(descendant::li[def="Fibula"])]//li[def="Tibia"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Fibula</def>
+						<customLabel>left fibula</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Legs</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

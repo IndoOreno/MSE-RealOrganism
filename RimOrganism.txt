@@ -1,0 +1,56 @@
+Torso
+- Ribcage | 0.036
+- Sternum | 0.015
+- Pelvis | 0.025
+- Spine | 0.025
+- Stomach | 0.025
+- Heart | 0.020
+
+- L:Lung | 0.025
+- R:Lung | 0.025
+
+- L:Kidney | 0.017
+- R:Kidney | 0.017
+
+- Liver | 0.025
+
+- Neck | 0.075
+- - Head | 0.800
+- - - Skull | 0.180
+- - - - Brain | 0.800
+- - - L:Eye | 0.070
+- - - R:Eye | 0.070
+- - - L:Ear | 0.070
+- - - R:Ear | 0.070
+- - - Nose | 0.100
+- - - Jaw | 0.150
+
+- L:Shoulder | 0.120
+- - L:Clavicle | 0.090
+- - L:Arm | 0.770
+- - - L:Humerus | 0.100
+- - - L:Radius | 0.100
+- - - L:Hand | 0.140
+- - - - L:Finger ... 5
+
+- R:Shoulder | 0.120
+- - R:Clavicle | 0.090
+- - R:Arm | 0.770
+- - - R:Humerus | 0.100
+- - - R:Radius | 0.100
+- - - R:Hand | 0.140
+- - - - R:Finger ... 5
+
+- C:Waist
+
+- L:Leg | 0.140
+- - L:Femur | 0.100
+- - L:Tibia | 0.100
+- - L:Foot | 0.100
+- - - L:Toe ... 5
+
+- R:Leg | 0.140
+- - R:Femur | 0.100
+- - R:Tibia | 0.100
+- - R:Foot | 0.100
+- - - R:Toe ... 5

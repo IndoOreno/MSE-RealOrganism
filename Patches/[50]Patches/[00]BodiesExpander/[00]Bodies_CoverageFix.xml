@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ARM -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/coverage</xpath>
+		<success>Always</success>
+		<value>
+			<coverage>0.70</coverage>
+		</value>
+	</Operation>
+
+</Patch>

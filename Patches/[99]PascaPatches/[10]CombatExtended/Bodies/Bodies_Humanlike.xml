@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- <li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="Human"]/corePart/parts//li[def="Arm" and customLabel="right arm"]/groups[not(child::li="RightArm")]</xpath>
+					<value>
+						<li>RightArm</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyDef[defName="Human"]/corePart/parts//li[def="Arm" and customLabel="left arm"]/groups[not(child::li="LeftArm")]</xpath>
+					<value>
+						<li>LeftArm</li>
+					</value>
+				</li> DISABLED - INTENDED TO SUPPORT MODDED RACES -->
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Hand -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Hand"]/statBases/MarketValue</xpath>
+		<success>Always</success>
+		<value>
+			<MarketValue>50</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- Finger -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Finger"]/statBases/MarketValue</xpath>
+		<success>Always</success>
+		<value>
+			<MarketValue>10</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- Foot -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Foot"]/statBases/MarketValue</xpath>
+		<success>Always</success>
+		<value>
+			<MarketValue>50</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- Toe -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Toe"]/statBases/MarketValue</xpath>
+		<success>Always</success>
+		<value>
+			<MarketValue>10</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- Stomach -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Stomach"]/statBases/MarketValue</xpath>
+		<success>Always</success>
+		<value>
+			<MarketValue>250</MarketValue>
+		</value>
+	</Operation>
+
+</Patch>

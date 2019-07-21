@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ESOPHAGUS -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Esophagus"])]//li[def="Stomach"][1]</xpath>
+		<order>Prepend</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Esophagus</def>
+				<coverage>0.005</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- TRACHEA -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Trachea"])]//li[def="Lung"][1]</xpath>
+		<order>Prepend</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Trachea</def>
+				<coverage>0.005</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- PHARYNX -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Neck"]/parts//li[def="Head"]/parts[not(descendant::li[def="Pharynx"])]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Pharynx</def>
+				<coverage>0.020</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Neck</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- LARYNX -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Larynx"])]//li[def="Neck"]/parts//li[def="Head"]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Larynx</def>
+				<coverage>0.060</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Neck</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Tongue</defName>
+		<label>tongue</label>
+		<description>A biological tongue. The fleshy muscular organ for tasting and articulating speech. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>UpperArm</defName>
+		<label>upper arm</label>
+		<description>A biological human upper arm. Part of arm that lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Elbow</defName>
+		<label>elbow</label>
+		<description>A biological human elbow. Part of arm that lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Forearm</defName>
+		<label>forearm</label>
+		<description>A biological human forearm. Part of arm that lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Wrist</defName>
+		<label>wrist</label>
+		<description>A biological human wrist. Part of arm that lets you work and carry stuff. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Hip</defName>
+		<label>hip</label>
+		<description>A biological human hip. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Thigh</defName>
+		<label>thigh</label>
+		<description>A biological human thigh. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>6</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Knee</defName>
+		<label>knee</label>
+		<description>A biological human knee. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>LowerLeg</defName>
+		<label>lower leg</label>
+		<description>A biological human lower leg. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Ankle</defName>
+		<label>ankle</label>
+		<description>A biological human ankle. Part of leg that lets you move around. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Spleen</defName>
+		<label>spleen</label>
+		<description>A biological human spleen. Acts as a filter for blood on the body. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Thymus</defName>
+		<label>thymus</label>
+		<description>A biological human thymus. Acts as a filter for blood on the body. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Pancreas</defName>
+		<label>pancreas</label>
+		<description>A biological human pancreas. Digests food and turns it into energy. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>LargeIntestine</defName>
+		<label>large intestine</label>
+		<description>A biological human large intestine. Digests food and turns it into energy. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>SmallIntestine</defName>
+		<label>small intestine</label>
+		<description>A biological human small intestine. Digests food and turns it into energy. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Mesentery</defName>
+		<label>mesentery</label>
+		<description>A biological human mesentery. Digests food and turns it into energy. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Bladder</defName>
+		<label>bladder</label>
+		<description>A biological human bladder. Hollow muscular organ that stores urine. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<Mass>0.03</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Gallbladder</defName>
+		<label>gallbladder</label>
+		<description>A biological human gallbladder. Stores bile produced by the liver to help digestion of fats in food. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>0.05</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Larynx</defName>
+		<label>larynx</label>
+		<description>A biological human larynx. Involved in breathing and required for talking. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Esophagus</defName>
+		<label>esophagus</label>
+		<description>A biological human esophagus. The first components of the digestive system. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Trachea</defName>
+		<label>trachea</label>
+		<description>A biological human trachea. A tube that connects the larynx to the lungs. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>125</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="MSE_BodyPartNatural">
+		<defName>Bronchus</defName>
+		<label>bronchus</label>
+		<description>A biological human bronchus. A passage of airway in the respiratory system that conducts air into the lungs. Requires organ transplantation research to transplant it.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BreathingSupportRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>breathing support rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BreathingSupportRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>a breathing support rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BreathingSupportRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.010</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+					</statOffsets>
+					<capMods>
+						<li>
+							<capacity>Breathing</capacity>
+							<!----><offset>0.01</offset>
+						</li>
+					</capMods>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RelaxationRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>relaxation rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RelaxationRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>a relaxation rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="RelaxationRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.010</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+						<!----><MentalBreakThreshold>-0.01</MentalBreakThreshold>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ColdRegulatorRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>cold regulator rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ColdRegulatorRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>a cold regulator rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="ColdRegulatorRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.010</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+						<!----><ComfyTemperatureMin>-0.5</ComfyTemperatureMin>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+	<!-- Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="HeatRegulatorRib"]/label</xpath>
+		<success>Always</success>
+		<value>
+			<label>heat regulator rib</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="HeatRegulatorRib"]/labelNoun</xpath>
+		<success>Always</success>
+		<value>
+			<labelNoun>a heat regulator rib</labelNoun>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="HeatRegulatorRib"]/stages</xpath>
+		<success>Always</success>
+		<value>
+			<stages Inherit="False">
+				<li>
+					<statOffsets>
+						<ArmorRating_Blunt>0.010</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.010</ArmorRating_Heat>
+						<ArmorRating_Sharp>0.010</ArmorRating_Sharp>
+						<!----><ComfyTemperatureMax>0.5</ComfyTemperatureMax>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+</Patch>

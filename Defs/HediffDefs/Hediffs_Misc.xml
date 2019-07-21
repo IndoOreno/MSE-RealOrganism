@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="MSERealOrganism_MissingPart" Abstract="True">
+		<defaultLabelColor>(0.5, 0.5, 0.5, 1)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<defName>MSE_MissingMetabolismPart</defName>
+		<label>missing part for metabolism</label>
+		<labelNoun>a missing metabolism required part</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqMetabolismPart">
+				<invert>true</invert>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.20</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>999</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+				<statOffsets>
+					<HungerRateMultiplier>099</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<statOffsets>
+					<HungerRateMultiplier>3.0</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<statOffsets>
+					<HungerRateMultiplier>1.5</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<defName>MSE_MissingEatingPart</defName>
+		<label>missing part for eating</label>
+		<labelNoun>a missing eating required part</labelNoun>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqEatingPart">
+				<invert>true</invert>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<defName>MSE_MissingEatingPathwayPart</defName>
+		<label>missing pathway part for eating</label>
+		<labelNoun>a missing eating required pathway part</labelNoun>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqEatingPathwayPart">
+				<invert>true</invert>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painOffset>0.05</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>MSE_MissingBreathingPathwayPart</defName>
+		<label>missing pathway part for breathing</label>
+		<labelNoun>a missing breathing required pathway part</labelNoun>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqBreathingPathwayPart">
+				<invert>true</invert>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2.00</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.0001</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.70</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<defName>MSE_MissingTalkingPart</defName>
+		<label>missing part for talking</label>
+		<labelNoun>a missing talking required part</labelNoun>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqTalkingPart">
+				<invert>true</invert>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="MSERealOrganism_MissingPart">
+		<defName>MSE_MissingMovingPart</defName>
+		<label>missing part for moving</label>
+		<labelNoun>a missing moving required part</labelNoun>
+		<comps>
+			<li Class="OrenoMSE_RealOrganism.HediffCompProperties_ReqMovingPart">
+				<invert>true</invert>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

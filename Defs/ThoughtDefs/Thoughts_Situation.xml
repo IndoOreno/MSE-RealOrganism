@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>BionicRib</defName>
+		<workerClass>OrenoMSE_RealOrganism.ThoughtWorker_BionicRibs</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Bionic rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RelaxationRib</defName>
+		<workerClass>OrenoMSE_RealOrganism.ThoughtWorker_RelaxationRibs</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>ArchotechRib</defName>
+		<workerClass>OrenoMSE_RealOrganism.ThoughtWorker_ArchotechRibs</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>7</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>9</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>11</baseMoodEffect>
+			</li>
+			<li>
+				<label>Archotech rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>AdvancedRelaxationRib</defName>
+		<workerClass>OrenoMSE_RealOrganism.ThoughtWorker_AdvancedRelaxationRibs</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<nullifyingTraits>
+			<li>BodyPurist</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>It's make me feel more relaxed.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>My chest feels so good.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>14</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>16</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>18</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>22</baseMoodEffect>
+			</li>
+			<li>
+				<label>Advanced Relaxation rib</label>
+				<description>This pleasure. It's feels amazing.</description>
+				<baseMoodEffect>24</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

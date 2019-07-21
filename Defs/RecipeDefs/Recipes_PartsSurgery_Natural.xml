@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalSpleen</defName>
+		<label>install spleen</label>
+		<description>Install a biological spleen.</description>
+		<jobString>Installing spleen.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Spleen</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Spleen</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spleen</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Spleen</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalThymus</defName>
+		<label>install thymus</label>
+		<description>Install a biological thymus.</description>
+		<jobString>Installing thymus.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Thymus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Thymus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Thymus</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Thymus</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalPancreas</defName>
+		<label>install pancreas</label>
+		<description>Install a biological pancreas.</description>
+		<jobString>Installing pancreas.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pancreas</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Pancreas</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Pancreas</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Pancreas</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalLargeIntestine</defName>
+		<label>install large intestine</label>
+		<description>Install a biological large intestine.</description>
+		<jobString>Installing large intestine.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LargeIntestine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>LargeIntestine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LargeIntestine</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>LargeIntestine</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalSmallIntestine</defName>
+		<label>install small intestine</label>
+		<description>Install a biological small intestine.</description>
+		<jobString>Installing small intestine.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmallIntestine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>SmallIntestine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SmallIntestine</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>SmallIntestine</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalMesentery</defName>
+		<label>install mesentery</label>
+		<description>Install a biological mesentery.</description>
+		<jobString>Installing mesentery.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mesentery</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Mesentery</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Mesentery</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Mesentery</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalBladder</defName>
+		<label>install bladder</label>
+		<description>Install a biological bladder.</description>
+		<jobString>Installing bladder.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bladder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Bladder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Bladder</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Bladder</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalGallbladder</defName>
+		<label>install gallbladder</label>
+		<description>Install a biological gallbladder.</description>
+		<jobString>Installing gallbladder.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gallbladder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Gallbladder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Gallbladder</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Gallbladder</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalLarynx</defName>
+		<label>install larynx</label>
+		<description>Install a biological larynx.</description>
+		<jobString>Installing larynx.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Larynx</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Larynx</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Larynx</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Larynx</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalEsophagus</defName>
+		<label>install esophagus</label>
+		<description>Install a biological esophagus.</description>
+		<jobString>Installing esophagus.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Esophagus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Esophagus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Esophagus</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Esophagus</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalTrachea</defName>
+		<label>install trachea</label>
+		<description>Install a biological trachea.</description>
+		<jobString>Installing trachea.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Trachea</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Trachea</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Trachea</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Trachea</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural_Organ">
+		<defName>InstallNaturalBronchus</defName>
+		<label>install bronchus</label>
+		<description>Install a biological bronchus.</description>
+		<jobString>Installing bronchus.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bronchus</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Bronchus</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Bronchus</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Bronchus</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalTongue</defName>
+		<label>install tongue</label>
+		<description>Install a biological tongue.</description>
+		<jobString>Installing tongue.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tongue</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Tongue</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tongue</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Tongue</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalUpperArm</defName>
+		<label>install upper arm</label>
+		<description>Install a biological upper arm.</description>
+		<jobString>Installing upper arm.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UpperArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>UpperArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>UpperArm</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>UpperArm</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalElbow</defName>
+		<label>install elbow</label>
+		<description>Install a biological elbow.</description>
+		<jobString>Installing elbow.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Elbow</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Elbow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Elbow</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Elbow</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalForearm</defName>
+		<label>install forearm</label>
+		<description>Install a biological forearm.</description>
+		<jobString>Installing forearm.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Forearm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Forearm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Forearm</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Forearm</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalWrist</defName>
+		<label>install wrist</label>
+		<description>Install a biological wrist.</description>
+		<jobString>Installing wrist.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Wrist</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Wrist</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Wrist</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Wrist</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalHip</defName>
+		<label>install hip</label>
+		<description>Install a biological hip.</description>
+		<jobString>Installing hip.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hip</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Hip</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Hip</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Hip</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalThigh</defName>
+		<label>install thigh</label>
+		<description>Install a biological thigh.</description>
+		<jobString>Installing thigh.</jobString>
+		<workAmount>3700</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Thigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Thigh</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Thigh</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Thigh</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalKnee</defName>
+		<label>install knee</label>
+		<description>Install a biological knee.</description>
+		<jobString>Installing knee.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Knee</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Knee</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Knee</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Knee</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalLowerLeg</defName>
+		<label>install lower leg</label>
+		<description>Install a biological lower leg.</description>
+		<jobString>Installing lower leg.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LowerLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>LowerLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>LowerLeg</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>LowerLeg</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSE_SurgeryNatural">
+		<defName>InstallNaturalAnkle</defName>
+		<label>install ankle</label>
+		<description>Install a biological ankle.</description>
+		<jobString>Installing ankle.</jobString>
+		<workAmount>1300</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ankle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Ankle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Ankle</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="OrenoMSE.MSE_AdditionalHediff">
+				<hediffsToAdd>
+					<li>Ankle</li>
+				</hediffsToAdd>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

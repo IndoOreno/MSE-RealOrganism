@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Spleen - New organ for immune system -->
+	<BodyPartDef>
+		<defName>Spleen</defName>
+		<label>spleen</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : immunity stat scaling -->
+		<spawnThingOnRemoved>Spleen</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Thymus - New organ for immune system -->
+	<BodyPartDef>
+		<defName>Thymus</defName>
+		<label>thymus</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : immunity stat scaling -->
+		<spawnThingOnRemoved>Thymus</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Pancreas - New organ for metabolism -->
+	<BodyPartDef>
+		<defName>Pancreas</defName>
+		<label>pancreas</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MetabolismSource</li>
+			<li>MSE_MetabolismSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<!-- Planned : food poisoning stat scaling -->
+		<spawnThingOnRemoved>Pancreas</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Large Intestine - New organ for metabolism -->
+	<BodyPartDef>
+		<defName>LargeIntestine</defName>
+		<label>large intestine</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MetabolismSource</li>
+			<li>MSE_MetabolismSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>LargeIntestine</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Small Intestine - New organ for metabolism -->
+	<BodyPartDef>
+		<defName>SmallIntestine</defName>
+		<label>small intestine</label>
+		<hitPoints>20</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MetabolismSource</li>
+			<li>MSE_MetabolismSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>SmallIntestine</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Mesentery - New organ for metabolism -->
+	<BodyPartDef>
+		<defName>Mesentery</defName>
+		<label>mesentery</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MetabolismSource</li>
+			<li>MSE_MetabolismSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Mesentery</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Bladder - New organ -->
+	<!-- Planned : Support for Dubs Bad Hygiene -->
+	<BodyPartDef>
+		<defName>Bladder</defName>
+		<label>bladder</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Bladder</spawnThingOnRemoved>
+	</BodyPartDef>
+
+	<!-- Gallbladder - New organ for metabolism -->
+	<BodyPartDef>
+		<defName>Gallbladder</defName>
+		<label>gallbladder</label>
+		<hitPoints>3</hitPoints>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>MetabolismSource</li>
+		</tags>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<spawnThingOnRemoved>Gallbladder</spawnThingOnRemoved>
+	</BodyPartDef>
+
+</Defs>

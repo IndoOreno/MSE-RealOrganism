@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Bionic Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BionicRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>5</Plasteel>
+				<ComponentSpacer>1</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BionicRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>300</MarketValue>
+				<WorkToMake>4000</WorkToMake>
+				<Mass>0.3</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Bionic Spine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BionicSpine"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BionicSpine"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>800</MarketValue>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>1</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!--=============== Special Bionics ================-->
+
+	<!-- Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BreathingSupportRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BreathingSupportRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>500</MarketValue>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RelaxationRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RelaxationRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>500</MarketValue>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ColdRegulatorRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ColdRegulatorRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>500</MarketValue>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HeatRegulatorRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HeatRegulatorRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>500</MarketValue>
+				<WorkToMake>12000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+</Patch>

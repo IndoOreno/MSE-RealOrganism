@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyPartDef[defName="UpperArm" or defName="Elbow" or defName="Forearm" or defName="Wrist" or defName="Hip" or defName="Thigh" or defName="Knee" or defName="LowerLeg" or defName="Ankle"][not(child::bleedRate)]</xpath>
+					<value>
+						<bleedRate>1.5</bleedRate>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

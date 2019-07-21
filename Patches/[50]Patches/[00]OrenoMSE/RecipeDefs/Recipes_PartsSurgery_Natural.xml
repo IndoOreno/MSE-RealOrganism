@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Hand -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallNaturalHand"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>1300</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Finger -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallNaturalFinger"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>700</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Foot -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallNaturalFoot"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>1300</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Toe -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallNaturalToe"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>700</workAmount>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyPartDef[defName="Spleen" or defName="Thymus" or defName="Gallbladder"][not(child::bleedRate)]</xpath>
+					<value>
+						<bleedRate>3.0</bleedRate>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyPartDef[defName="Pancreas" or defName="LargeIntestine" or defName="SmallIntestine" or defName="Mesentery"][not(child::bleedRate)]</xpath>
+					<value>
+						<bleedRate>4.5</bleedRate>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/BodyPartDef[defName="Spleen" or defName="Thymus" or defName="Pancreas" or defName="LargeIntestine" or defName="SmallIntestine" or defName="Mesentery" or defName="Bladder" or defName="Gallbladder"][not(child::permanentInjuryChanceFactor)]</xpath>
+					<value>
+						<permanentInjuryChanceFactor>0.5</permanentInjuryChanceFactor>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

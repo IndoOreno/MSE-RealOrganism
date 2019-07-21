@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- LUNG - Bronchus -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Lung" and customLabel="right lung"]/parts[not(descendant::li[def="Bronchus"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Bronchus</def>
+						<customLabel>right bronchus</customLabel>
+						<coverage>0.050</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Lung" and customLabel="left lung"]/parts[not(descendant::li[def="Bronchus"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Bronchus</def>
+						<customLabel>left bronchus</customLabel>
+						<coverage>0.050</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Torso</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- BRAIN -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- Frontal Lobe -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="FrontalLobe"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>FrontalLobe</def>
+						<customLabel>frontal lobe</customLabel>
+						<coverage>0.200</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<!-- Parietal Lobe -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="ParietalLobe"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>ParietalLobe</def>
+						<customLabel>parietal lobe</customLabel>
+						<coverage>0.150</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<!-- Temporal Lobe -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="TemporalLobe"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>TemporalLobe</def>
+						<customLabel>temporal lobe</customLabel>
+						<coverage>0.150</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<!-- Occipital Lobe -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="OccipitalLobe"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>OccipitalLobe</def>
+						<customLabel>occipital lobe</customLabel>
+						<coverage>0.100</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<!-- Cerebellum -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="Cerebellum"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Cerebellum</def>
+						<customLabel>cerebellum</customLabel>
+						<coverage>0.100</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<!-- Brainstem -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"]/parts[not(descendant::li[def="Brainstem"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Brainstem</def>
+						<customLabel>brainstem</customLabel>
+						<coverage>0.050</coverage>
+						<groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

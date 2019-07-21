@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- FOREARM - Radius and Ulna -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[child::li[def="Radius"]]//li[def="Forearm" and customLabel="right forearm"]/parts[not(descendant::li[def="Radius"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Radius</def>
+						<customLabel>right radius</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ulna</def>
+						<customLabel>right ulna</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[child::li[def="Radius"]]//li[def="Forearm" and customLabel="left forearm"]/parts[not(descendant::li[def="Radius"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Radius</def>
+						<customLabel>left radius</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+					<li>
+						<def>Ulna</def>
+						<customLabel>left ulna</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[descendant::li[def="Forearm"]/parts/li[def="Radius"]]/li[def="Radius" or def="Ulna"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- FOREARM - Hand -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[child::li[def="Hand"]]//li[def="Wrist" and customLabel="right wrist"]/parts[not(descendant::li[def="Hand"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Hand</def>
+						<customLabel>right hand</customLabel>
+						<coverage>0.14</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>Hands</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Finger</def>
+								<customLabel>right pinky</customLabel>
+								<coverage>0.06</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>RightHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>right ring finger</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>RightHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>right middle finger</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>RightHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>right index finger</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>RightHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>right thumb</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>RightHand</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[child::li[def="Hand"]]//li[def="Wrist" and customLabel="left wrist"]/parts[not(descendant::li[def="Hand"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Hand</def>
+						<customLabel>left hand</customLabel>
+						<coverage>0.14</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>Hands</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Finger</def>
+								<customLabel>left pinky</customLabel>
+								<coverage>0.06</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>LeftHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>left ring finger</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>LeftHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>left middle finger</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>LeftHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>left index finger</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>LeftHand</li>
+								</groups>
+							</li>
+							<li>
+								<def>Finger</def>
+								<customLabel>left thumb</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Hands</li>
+									<li>LeftHand</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[descendant::li[def="Wrist"]/parts/li[def="Hand"]]/li[def="Hand"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- LOWER LEG - Tibia and Fibula -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[child::li[def="Tibia"]]//li[def="LowerLeg" and customLabel="right lower leg"]/parts[not(descendant::li[def="Tibia"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Tibia</def>
+						<customLabel>right tibia</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+					<li>
+						<def>Fibula</def>
+						<customLabel>right fibula</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[child::li[def="Tibia"]]//li[def="LowerLeg" and customLabel="left lower leg"]/parts[not(descendant::li[def="Tibia"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Tibia</def>
+						<customLabel>left tibia</customLabel>
+						<coverage>0.1</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+					<li>
+						<def>Fibula</def>
+						<customLabel>left fibula</customLabel>
+						<coverage>0.080</coverage>
+						<depth>Inside</depth>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[descendant::li[def="LowerLeg"]/parts/li[def="Tibia"]]/li[def="Tibia" or def="Fibula"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- LOWER LEG - Foot -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[child::li[def="Foot"]]//li[def="Ankle" and customLabel="right ankle"]/parts[not(descendant::li[def="Foot"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Foot</def>
+						<customLabel>right foot</customLabel>
+						<coverage>0.1</coverage>
+						<groups>
+							<li>Feet</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Toe</def>
+								<customLabel>right little toe</customLabel>
+								<coverage>0.06</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>right fourth toe</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>right middle toe</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>right second toe</customLabel>
+								<coverage>0.09</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>right big toe</customLabel>
+								<coverage>0.09</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[child::li[def="Foot"]]//li[def="Ankle" and customLabel="left ankle"]/parts[not(descendant::li[def="Foot"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Foot</def>
+						<customLabel>left foot</customLabel>
+						<coverage>0.1</coverage>
+						<groups>
+							<li>Feet</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Toe</def>
+								<customLabel>left little toe</customLabel>
+								<coverage>0.06</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>left fourth toe</customLabel>
+								<coverage>0.07</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>left middle toe</customLabel>
+								<coverage>0.08</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>left second toe</customLabel>
+								<coverage>0.09</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+							<li>
+								<def>Toe</def>
+								<customLabel>left big toe</customLabel>
+								<coverage>0.09</coverage>
+								<groups>
+									<li>Feet</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[descendant::li[def="Ankle"]/parts/li[def="Foot"]]/li[def="Foot"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Archotech Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>5</Uranium>
+				<Gold>10</Gold>
+				<Plasteel>10</Plasteel>
+				<ComponentSpacer>2</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>800</MarketValue>
+				<WorkToMake>10000</WorkToMake>
+				<Mass>0.3</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Archotech Spine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechSpine"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>15</Uranium>
+				<Gold>15</Gold>
+				<Plasteel>20</Plasteel>
+				<ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ArchotechSpine"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>1500</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>1</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!--=============== Special Bionics ================-->
+
+	<!-- Advanced Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedBreathingSupportRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>15</Uranium>
+				<Gold>20</Gold>
+				<Plasteel>20</Plasteel>
+				<ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedBreathingSupportRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>1500</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Advanced Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedRelaxationRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>15</Uranium>
+				<Gold>20</Gold>
+				<Plasteel>20</Plasteel>
+				<ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedRelaxationRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>1500</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Advanced Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedColdRegulatorRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>15</Uranium>
+				<Gold>20</Gold>
+				<Plasteel>20</Plasteel>
+				<ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedColdRegulatorRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>1500</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+	<!-- Advanced Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedHeatRegulatorRib"]/costList</xpath>
+		<success>Always</success>
+		<value>
+			<costList>
+				<Uranium>15</Uranium>
+				<Gold>20</Gold>
+				<Plasteel>20</Plasteel>
+				<ComponentSpacer>4</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvancedHeatRegulatorRib"]/statBases</xpath>
+		<success>Always</success>
+		<value>
+			<statBases>
+				<MarketValue>1500</MarketValue>
+				<WorkToMake>30000</WorkToMake>
+				<Mass>0.5</Mass>
+			</statBases>
+		</value>
+	</Operation>
+
+</Patch>

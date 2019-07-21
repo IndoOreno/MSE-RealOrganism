@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Archotech Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallArchotechRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2000</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Archotech Spine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallArchotechSpine"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>3000</workAmount>
+		</value>
+	</Operation>
+
+	<!--============== Special Archotech ===============-->
+
+	<!-- Advanced Breathing Support Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedBreathingSupportRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Advanced Relaxation Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedRelaxationRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Advanced Cold Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedColdRegulatorRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+	<!-- Advanced Heat Regulator Rib -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="InstallAdvancedHeatRegulatorRib"]/workAmount</xpath>
+		<success>Always</success>
+		<value>
+			<workAmount>2500</workAmount>
+		</value>
+	</Operation>
+
+</Patch>

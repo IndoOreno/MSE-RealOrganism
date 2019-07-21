@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- LUNG -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Lung"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- BRAIN -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Brain"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+</Patch>

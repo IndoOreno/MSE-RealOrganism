@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- MOUTH - Tongue -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Mouth"]/parts[not(descendant::li[def="Tongue"])]</xpath>
+		<order>Prepend</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Tongue</def>
+				<coverage>0.030</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Mouth</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- JAW - Tooth -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Jaw"]/parts[not(descendant::li[def="Tooth"])]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Tooth</def>
+				<customLabel>tooth</customLabel>
+				<coverage>0.700</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Teeth</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- KNEE - Patella -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Knee" and customLabel="right knee"]/parts[not(descendant::li[def="Patella"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Patella</def>
+						<customLabel>right patella</customLabel>
+						<coverage>0.060</coverage>
+						<groups>
+							<li>Thigh</li>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Knee" and customLabel="left knee"]/parts[not(descendant::li[def="Patella"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>Patella</def>
+						<customLabel>left patella</customLabel>
+						<coverage>0.060</coverage>
+						<groups>
+							<li>Thigh</li>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- MOUTH -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Head"]/parts[child::li[def="Jaw"] and not(descendant::li[def="Mouth"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Mouth</def>
+						<coverage>0.200</coverage>
+						<groups>
+							<li>FullHead</li>
+							<li>Mouth</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Jaw</def>
+								<coverage>0.015</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Mouth</li>
+									<li>Teeth</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Head"]/parts[child::li[def="Mouth"]/parts/li[def="Jaw"]]/li[def="Jaw"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare JAW -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Jaw"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- UPPER ARM -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm" and customLabel="right arm"]/parts[child::li[def="Humerus"] and not(descendant::li[def="UpperArm"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>UpperArm</def>
+						<customLabel>right upper arm</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Arms</li>
+							<li>UpperArm</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Humerus</def>
+								<customLabel>right humerus</customLabel>
+								<coverage>0.1</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>UpperArm</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm" and customLabel="left arm"]/parts[child::li[def="Humerus"] and not(descendant::li[def="UpperArm"])]</xpath>
+				<order>Prepend</order>
+				<value>
+					<li>
+						<def>UpperArm</def>
+						<customLabel>left upper arm</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Arms</li>
+							<li>UpperArm</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Humerus</def>
+								<customLabel>left humerus</customLabel>
+								<coverage>0.1</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>UpperArm</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Arm"]/parts[child::li[def="UpperArm"]/parts/li[def="Humerus"]]/li[def="Humerus"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- ELBOW -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="UpperArm" and customLabel="right upper arm"]/parts[not(descendant::li[def="Elbow"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Elbow</def>
+						<customLabel>right elbow</customLabel>
+						<coverage>0.750</coverage>
+						<groups>
+							<li>UpperArm</li>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="UpperArm" and customLabel="left upper arm"]/parts[not(descendant::li[def="Elbow"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Elbow</def>
+						<customLabel>left elbow</customLabel>
+						<coverage>0.750</coverage>
+						<groups>
+							<li>UpperArm</li>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare ELBOW -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Elbow"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- FOREARM -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Elbow" and customLabel="right elbow"]/parts[not(descendant::li[def="Forearm"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Forearm</def>
+						<customLabel>right forearm</customLabel>
+						<coverage>0.850</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Elbow" and customLabel="left elbow"]/parts[not(descendant::li[def="Forearm"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Forearm</def>
+						<customLabel>left forearm</customLabel>
+						<coverage>0.850</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>Forearm</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare FOREARM -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Forearm"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- WRIST -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Forearm" and customLabel="right forearm"]/parts[not(descendant::li[def="Wrist"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Wrist</def>
+						<customLabel>right wrist</customLabel>
+						<coverage>0.720</coverage>
+						<groups>
+							<li>Forearm</li>
+							<li>Hands</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Forearm" and customLabel="left forearm"]/parts[not(descendant::li[def="Wrist"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Wrist</def>
+						<customLabel>left wrist</customLabel>
+						<coverage>0.720</coverage>
+						<groups>
+							<li>Forearm</li>
+							<li>Hands</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare WRIST -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Wrist"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- HIP -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg" and customLabel="right leg"]/parts[child::li[def="Femur"] and not(descendant::li[def="Hip"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Hip</def>
+						<customLabel>right hip</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Legs</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg" and customLabel="left leg"]/parts[child::li[def="Femur"] and not(descendant::li[def="Hip"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Hip</def>
+						<customLabel>left hip</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Legs</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare HIP -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Hip"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- THIGH -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Hip" and customLabel="right hip"]/parts[not(descendant::li[def="Thigh"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Thigh</def>
+						<customLabel>right thigh</customLabel>
+						<coverage>0.850</coverage>
+						<groups>
+							<li>Legs</li>
+							<li>Thigh</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Femur</def>
+								<customLabel>right femur</customLabel>
+								<coverage>0.1</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Thigh</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Hip" and customLabel="left hip"]/parts[not(descendant::li[def="Thigh"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Thigh</def>
+						<customLabel>left thigh</customLabel>
+						<coverage>0.850</coverage>
+						<groups>
+							<li>Legs</li>
+							<li>Thigh</li>
+						</groups>
+						<parts>
+							<li>
+								<def>Femur</def>
+								<customLabel>left femur</customLabel>
+								<coverage>0.1</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>Thigh</li>
+								</groups>
+							</li>
+						</parts>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Leg"]/parts[descendant::li[def="Thigh"]/parts/li[def="Femur"]]/li[def="Femur"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- KNEE -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Thigh" and customLabel="right thigh"]/parts[not(descendant::li[def="Knee"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Knee</def>
+						<customLabel>right knee</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Thigh</li>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Thigh" and customLabel="left thigh"]/parts[not(descendant::li[def="Knee"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Knee</def>
+						<customLabel>left knee</customLabel>
+						<coverage>0.800</coverage>
+						<groups>
+							<li>Thigh</li>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare KNEE -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Knee"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- LOWER LEG -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Knee" and customLabel="right knee"]/parts[not(descendant::li[def="LowerLeg"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>LowerLeg</def>
+						<customLabel>right lower leg</customLabel>
+						<coverage>0.740</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="Knee" and customLabel="left knee"]/parts[not(descendant::li[def="LowerLeg"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>LowerLeg</def>
+						<customLabel>left lower leg</customLabel>
+						<coverage>0.740</coverage>
+						<height>Bottom</height>
+						<groups>
+							<li>LowerLeg</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare LOWER LEG -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="LowerLeg"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+	<!-- ANKLE -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="LowerLeg" and customLabel="right lower leg"]/parts[not(descendant::li[def="Ankle"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Ankle</def>
+						<customLabel>right ankle</customLabel>
+						<coverage>0.720</coverage>
+						<groups>
+							<li>LowerLeg</li>
+							<li>Feet</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/BodyDef/corePart/parts//li[def="LowerLeg" and customLabel="left lower leg"]/parts[not(descendant::li[def="Ankle"])]</xpath>
+				<order>Append</order>
+				<value>
+					<li>
+						<def>Ankle</def>
+						<customLabel>left ankle</customLabel>
+						<coverage>0.720</coverage>
+						<groups>
+							<li>LowerLeg</li>
+							<li>Feet</li>
+						</groups>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<!-- Prepare ANKLE -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BodyDef/corePart/parts//li[def="Ankle"][not(child::parts)]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<parts />
+		</value>
+	</Operation>
+
+</Patch>

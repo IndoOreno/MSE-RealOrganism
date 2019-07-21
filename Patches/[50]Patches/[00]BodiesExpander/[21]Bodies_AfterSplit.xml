@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- SACRUM -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Sacrum"])]//li[def="Spine" and customLabel="lumbar spine"]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Sacrum</def>
+				<coverage>0.005</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- COCCYX -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/BodyDef/corePart/parts[not(descendant::li[def="Coccyx"])]//li[def="Sacrum"]</xpath>
+		<order>Append</order>
+		<success>Always</success>
+		<value>
+			<li>
+				<def>Coccyx</def>
+				<coverage>0.001</coverage>
+				<depth>Inside</depth>
+				<groups>
+					<li>Torso</li>
+				</groups>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

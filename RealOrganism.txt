@@ -1,0 +1,108 @@
+Torso
+- Ribcage ... [12]
+- Sternum | 0.015
+- Pelvis | 0.025
+- Spine ... [2]
+- [Sacrum] | 0.005
+- [Coccyx] | 0.001
+- [Esophagus] | 0.005
+- Stomach | 0.025
+- [Pancreas] | 0.010
+- [Small Intestine] | 0.025
+- [Large Intestine] | 0.025
+- [Mesentery] | 0.010
+- Heart | 0.020
+- [Spleen] | 0.005
+- [Thymus] | 0.005
+- [Trachea] | 0.005
+
+- L:Lung | 0.025
+- - L:[Bronchus] | 0.050
+- R:Lung | 0.025
+- - R:[Bronchus] | 0.050
+
+- L:Kidney | 0.017
+- R:Kidney | 0.017
+- [Bladder] | 0.003
+
+- Liver | 0.025
+- [Gallbladder] | 0.002
+
+- Neck | 0.075
+- - Head | 0.800
+- - - Skull | 0.180
+- - - - Brain | 0.800
+- - - - - [Frontal Lobe] | 0.200
+- - - - - [Parietal Lobe] | 0.150
+- - - - - [Temporal Lobe] | 0.150
+- - - - - [Occipital Lobe] | 0.100
+- - - - - [Cerebellum] | 0.100
+- - - - - [Brainstem] | 0.050
+- - - L:Eye | 0.070
+- - - R:Eye | 0.070
+- - - L:Ear | 0.070
+- - - R:Ear | 0.070
+- - - Nose | 0.100
+- - - [Pharynx] | 0.020
+- - - [Mouth] | 0.200
+- - - - [Tongue] | 0.030
+- - - - Jaw | 0.150
+- - - - - [Tooth] | 0.700
+- - [Larynx] | 0.060
+- - Spine [3] | 0.005
+
+- L:Shoulder | 0.120
+- - L:[Scapula] | 0.110
+- - L:Clavicle | 0.090
+- - L:Arm | 0.700
+- - - L:[Upper Arm] | 0.800
+- - - - L:Humerus | 0.100
+- - - - L:[Elbow] | 0.750
+- - - - - L:[Forearm] | 0.850
+- - - - - - L:Radius | 0.100
+- - - - - - L:[Ulna] | 0.080
+- - - - - - L:[Wrist] | 0.720
+- - - - - - - L:Hand | 0.140
+- - - - - - - - L:Finger ... 5
+
+- R:Shoulder | 0.120
+- - R:[Scapula] | 0.110
+- - R:Clavicle | 0.090
+- - R:Arm | 0.700
+- - - R:[Upper Arm] | 0.800
+- - - - R:Humerus | 0.100
+- - - - R:[Elbow] | 0.750
+- - - - - R:[Forearm] | 0.850
+- - - - - - R:Radius | 0.100
+- - - - - - R:[Ulna] | 0.080
+- - - - - - R:[Wrist] | 0.720
+- - - - - - - R:Hand | 0.140
+- - - - - - - - R:Finger ... 5
+
+- C:Waist
+
+- L:Leg | 0.140
+- - L:[Hip] | 0.800
+- - - L:[Thigh] | 0.850
+- - - - L:Femur | 0.100
+- - - - L:[Knee] | 0.800
+- - - - - L:[Patella] | 0.060
+- - - - - L:[Lower Leg] | 0.740
+- - - - - - L:Tibia | 0.100
+- - - - - - L:[Fibula] | 0.080
+- - - - - - L:[Ankle] | 0.720
+- - - - - - - L:Foot | 0.100
+- - - - - - - - L:Toe ... 5
+
+- R:Leg | 0.140
+- - R:[Hip] | 0.800
+- - - R:[Thigh] | 0.850
+- - - - R:Femur | 0.100
+- - - - R:[Knee] | 0.800
+- - - - - R:[Patella] | 0.060
+- - - - - R:[Lower Leg] | 0.740
+- - - - - - R:Tibia | 0.100
+- - - - - - R:[Fibula] | 0.080
+- - - - - - R:[Ankle] | 0.720
+- - - - - - - R:Foot | 0.100
+- - - - - - - - R:Toe ... 5

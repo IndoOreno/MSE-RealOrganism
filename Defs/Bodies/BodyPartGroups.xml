@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Upper Arm - New limb group for arm -->
+	<BodyPartGroupDef>
+		<defName>UpperArm</defName>
+		<label>upper arm</label>
+		<listOrder>96</listOrder>
+	</BodyPartGroupDef>
+
+	<!-- Forearm - New limb group for upper arm -->
+	<BodyPartGroupDef>
+		<defName>Forearm</defName>
+		<label>forearm</label>
+		<listOrder>97</listOrder>
+	</BodyPartGroupDef>
+
+	<!-- Thigh - New limb group for leg -->
+	<BodyPartGroupDef>
+		<defName>Thigh</defName>
+		<label>thigh</label>
+		<listOrder>16</listOrder>
+	</BodyPartGroupDef>
+
+	<!-- Lower Leg - New limb group for thigh -->
+	<BodyPartGroupDef>
+		<defName>LowerLeg</defName>
+		<label>lowerleg</label>
+		<listOrder>17</listOrder>
+	</BodyPartGroupDef>
+
+</Defs>
